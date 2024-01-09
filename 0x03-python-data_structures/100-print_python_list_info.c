@@ -2,11 +2,6 @@
 #include <object.h>
 #include <listobject.h>
 
-/**
- * print_python_list_info - a function
- * @p: input
- * Return: void
- */
 void print_python_list_info(PyObject *p)
 {
 	int size, allocated_slots, i;
