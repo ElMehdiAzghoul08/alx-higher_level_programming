@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def islower(c):
     if ord("a") <= ord(c) <= ord("z"):
-        print("{:c} is lower".format(c))
+        print(f"{c} is lower")
         return True
     else:
-        print("{:c} is upper".format(c))
+        print(f"{c} is upper")
         return False
