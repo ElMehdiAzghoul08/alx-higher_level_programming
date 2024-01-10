@@ -4,5 +4,4 @@ def islower(c):
         print(f"{c} is lower")
         return True
     else:
-        print(f"{c} is upper")
         return False
