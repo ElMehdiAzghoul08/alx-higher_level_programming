@@ -2,9 +2,9 @@
 import sys
 if __name__ == "__main__":
     arg = len(sys.argv) - 1  # to avoid counting the file name
-    if arg < 1:
+    if arg == 0:
         print("0 arguments.")
-    elif arg == 0:
+    elif arg == 1:
         print("1 arguments:")
     else:
         print("{} arguments:".format(arg))
