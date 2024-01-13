@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
             'C': 100,
             'D': 500,
             'M': 1000
-            }
+    }
 
     total_ = 0
     prev_value_ = 0
@@ -24,6 +24,6 @@ def roman_to_int(roman_string):
         else:
             total_ += value_
 
-            prev_value_ = value_
+        prev_value_ = value_
 
-            return total_
+    return total_
