@@ -1,4 +1,4 @@
 -- listing all tables
 
-SHOW TABLES FROM mysql;
+SHOW TABLES;
 
