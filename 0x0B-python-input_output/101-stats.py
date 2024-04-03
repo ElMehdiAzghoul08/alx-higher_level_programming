@@ -5,11 +5,11 @@
 
 def print_stats(size, status_codes):
 
-
     """print_stats function"""
     print("File size: {}".format(size))
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
+
 
 if __name__ == "__main__":
     import sys
