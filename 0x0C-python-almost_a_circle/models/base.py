@@ -6,11 +6,11 @@ import os.path
 
 
 class Base:
-    """ Class Base """
+    """Class Base"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ Initializes instances """
+        """__init__ function"""
         if id is not None:
             self.id = id
         else:
@@ -19,14 +19,14 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """ List to JSON string """
+        """to_json_string function"""
         if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ Save object in a file """
+        """save_to file function"""
         filename = "{}.json".format(cls.__name__)
         list_dic = []
 
@@ -43,14 +43,14 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """ JSON string to dictionary """
+        """from_json_string"""
         if not json_string:
             return []
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """ Create an instance """
+        """create function"""
         if cls.__name__ == "Rectangle":
             new = cls(10, 10)
         else:
@@ -60,7 +60,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ Returns a list of instances """
+        """load_from_file function"""
         filename = "{}.json".format(cls.__name__)
 
         if os.path.exists(filename) is False:
@@ -79,7 +79,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """ Method that saves a CSV file """
+        """save_to_file_csv function"""
         filename = "{}.csv".format(cls.__name__)
 
         if cls.__name__ == "Rectangle":
@@ -105,7 +105,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """ Method that loads a CSV file """
+        """load_from_file_csv function"""
         filename = "{}.csv".format(cls.__name__)
 
         if os.path.exists(filename) is False:
