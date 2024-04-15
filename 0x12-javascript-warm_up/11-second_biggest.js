@@ -6,8 +6,10 @@ const r = argument.map(argument => parseInt(argument));
 console.log(biggest_(r));
 
 function biggest_ (r) {
-  if (r === 0 || r === 1) {
+  if (r.length <= 1) {
     return 0;
   }
+  else {
   return Math.max(...r);
+  }
 }
