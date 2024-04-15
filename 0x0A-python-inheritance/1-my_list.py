@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-""" module contain "MyList" class"""
+"""MyList"""
 
 
 class MyList(list):
-    """A class MyList that inherets from list.
-        Args:
-        list(class): parent class.
-    """
+    """MyList class"""
     def print_sorted(self):
-        """ prints a list, sorted."""
+        """print_sorted function"""
         print(sorted(self))
