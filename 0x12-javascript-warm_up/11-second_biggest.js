@@ -8,8 +8,7 @@ console.log(biggest_(r));
 function biggest_ (r) {
   if (r.length <= 1) {
     return 0;
-  }
-  else {
-  return Math.max(...r);
+  } else {
+    return Math.max(...r);
   }
 }
