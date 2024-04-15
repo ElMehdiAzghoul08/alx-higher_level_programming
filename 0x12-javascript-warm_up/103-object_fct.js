@@ -9,7 +9,6 @@ myObject.incr = () => {
   myObject.value = parseInt(myObject.value) + 1;
 };
 
-
 myObject.incr();
 console.log(myObject);
 myObject.incr();
