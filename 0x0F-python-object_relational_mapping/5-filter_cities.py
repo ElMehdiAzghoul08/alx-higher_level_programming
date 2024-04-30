@@ -27,7 +27,7 @@ if __name__ == "__main__":
             ct_ = ', '.join(cty_[0] for cty_ in output)
             print(ct_)
         else:
-            print("no cities found")
+            print("no ctz found")
 
         db.close()
 
