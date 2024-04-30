@@ -12,13 +12,18 @@ if __name__ == "__main__":
     password = sys.argv[2]
     db_name = sys.argv[3]
 
-    eg_ = create_engine(f'mysql+mysqldb://{username}:\
-                        {password}@localhost:3306/{db_name}')
-    Ssn_ = sessionmaker(bind=eg_)
-    ssn_ = Ssn_()
+    try:
 
-    ctz_ = ssn_.query(City).order_by(City.id).all()
-    for x in ctz_:
-        print("{}: ({}) {}".format(x.state.name, x.id, x.name))
+        eg_ = create_engine(f'mysql+mysqldb://{username}:\
+                            {password}@localhost:3306/{db_name}')
+        Ssn_ = sessionmaker(bind=eg_)
+        ssn_ = Ssn_()
 
-    ssn_.close()
+        ctz_ = ssn_.query(City).order_by(City.id).all()
+        for x in ctz_:
+            print("{}: ({}) {}".format(x.state.name, x.id, x.name))
+
+        ssn_.close()
+
+    except Exception as y:
+        print(f"Error: {y}")
