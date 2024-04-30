@@ -10,11 +10,11 @@ if __name__ == "__main__":
     password = sys.argv[2]
     db_name = sys.argv[3]
 
-    db = MySQLdb.connect(host="localhost",
-                         port=3306, user=username, passwd=password, db=db_name)
-    cr_ = db.cursor()
-
     try:
+        db = MySQLdb.connect(host="localhost",
+                             port=3306, user=username,
+                             passwd=password, db=db_name)
+        cr_ = db.cursor()
         cr_.execute("SELECT ctz_.id, ctz_.name, states.name \
                     FROM ctz_ JOIN states ON ctz_.state_id = states.id \
                     ORDER BY ctz_.id ASC")
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         for x in output:
             print(x)
 
-    except Exception as y:
-        print(y)
+        db.close()
 
-    db.close()
+    except Exception as y:
+        print(f"MySQL Error [{y.args[0]}]: {y.args[1]}")

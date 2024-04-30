@@ -16,8 +16,8 @@ if __name__ == "__main__":
     cr_ = db.cursor()
 
     try:
-        cr_.execute("SELECT * FROM states WHERE name = %s \
-                    ORDER BY id ASC", (name_state,))
+        cr_.execute("SELECT * FROM states WHERE name = '{}' \
+                ORDER BY id ASC".format(name_state))
         output = cr_.fetchall()
         for x in output:
             print(x)
