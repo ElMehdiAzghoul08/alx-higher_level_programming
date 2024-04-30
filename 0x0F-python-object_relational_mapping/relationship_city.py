@@ -7,7 +7,7 @@ from relationship_state import Base
 
 
 class City(Base):
-    """doc"""
+    """doc class City"""
 
     __tablename__ = 'ctz'
     id = Column(Integer, primary_key=True, nullable=False)
