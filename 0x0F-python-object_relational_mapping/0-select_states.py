@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""module doc"""
+
 import sys
 import MySQLdb
 """doc"""
