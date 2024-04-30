@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     dta_ = urllib.parse.urlencode({'email': email}).encode()
 
-    rst_ = urllib.request.Request(url_, dta_=dta_, method='POST')
+    rst_ = urllib.request.Request(url_, data=dta_, method='POST')
 
     with urllib.request.urlopen(rst_) as rp_:
         ctxt = rp_.read().decode('utf-8')
