@@ -13,4 +13,3 @@ if __name__ == "__main__":
         print("\t- type:", type(ctxt))
         print("\t- content:", ctxt)
         print("\t- utf8 content:", ctxt.decode('utf-8'))
-
