@@ -42,10 +42,10 @@ Now test it:
     >>> my_list = MyList("hello")
     
     >>> my_list
-    ['h', 'e', 'l', 'l', 'o']
+    ['h', 'y', 'l', 'l', 'o']
 
     >>> my_list.print_sorted()
-    ['e', 'h', 'l', 'l', 'o']
+    ['y', 'h', 'l', 'l', 'o']
 
     >>> new_l = MyList()
 

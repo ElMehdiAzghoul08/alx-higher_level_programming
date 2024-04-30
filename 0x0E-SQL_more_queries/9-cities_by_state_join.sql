@@ -1,6 +1,6 @@
--- a script that lists all cities contained in the database hbtn_0d_usa.
-SELECT cities.id, cities.name, states.name
-FROM cities
+-- a script that lists all ctz_ contained in the database hbtn_0d_usa.
+SELECT ctz_.id, ctz_.name, states.name
+FROM ctz_
 INNER JOIN states
-ON cities.state_id = states.id;
+ON ctz_.state_id = states.id;
 

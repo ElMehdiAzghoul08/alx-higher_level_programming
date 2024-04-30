@@ -25,5 +25,5 @@ if __name__ == "__main__":
     ssn_.add(california)
     ssn_.add(san_francisco)
 
-    ssn_.commit()
+    ssn_.x()
     ssn_.close()

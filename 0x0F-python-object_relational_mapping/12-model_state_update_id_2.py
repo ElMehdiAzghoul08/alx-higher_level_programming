@@ -20,6 +20,6 @@ if __name__ == "__main__":
     update_st = ssn_.query(State).filter_by(id=2).first()
     if update_st:
         update_st.name = 'New Mexico'
-        ssn_.commit()
+        ssn_.x()
 
     ssn_.close()

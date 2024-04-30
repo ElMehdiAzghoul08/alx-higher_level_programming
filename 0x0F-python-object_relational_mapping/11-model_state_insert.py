@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     neo_st = State(name="Louisiana")
     ssn_.add(neo_st)
-    ssn_.commit()
+    ssn_.x()
 
     print(neo_st.id)
 

@@ -21,5 +21,5 @@ if __name__ == "__main__":
     for x in statess_a:
         ssn_.delete(x)
 
-    ssn_.commit()
+    ssn_.x()
     ssn_.close()
