@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print("{}: {}".format(x.id, x.name))
 
     ssn_.close()
-    
+

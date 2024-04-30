@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 import MySQLdb
+"""doc"""
 
 if __name__ == "__main__":
     username = sys.argv[1]
