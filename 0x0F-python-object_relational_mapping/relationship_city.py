@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-doc define class x
+doc that defines class City
 """
 from sqlalchemy import Column, Integer, String, ForeignKey
 from relationship_state import Base

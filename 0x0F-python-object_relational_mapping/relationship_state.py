@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-doc define class City
+doc that defines a class City
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
