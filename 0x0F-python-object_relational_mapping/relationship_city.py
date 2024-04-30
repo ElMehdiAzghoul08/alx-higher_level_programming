@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""doc define class x"""
+"""
+doc define class x
+"""
 from sqlalchemy import Column, Integer, String, ForeignKey
 from relationship_state import Base
 

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""doc that define a class State"""
+"""
+doc that define a class State
+"""
 import sys
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base

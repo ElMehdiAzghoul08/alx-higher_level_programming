@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""doc define class City"""
+"""
+doc define class City
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from relationship_city import Base, City
