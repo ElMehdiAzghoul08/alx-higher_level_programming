@@ -19,6 +19,12 @@ req_(urlApI_, (error_, response_, body_) => {
       }
       return a_;
     }, {});
+
+    if (Object.keys(finisheDTasks_).length === 0) {
+      for (let i = 1; i <= 10; i++) {
+        finisheDTasks_[i] = 0;
+      }
+    }
     console.log(finisheDTasks_);
   }
 });
