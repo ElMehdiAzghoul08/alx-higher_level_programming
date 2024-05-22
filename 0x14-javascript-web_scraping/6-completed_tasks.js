@@ -14,6 +14,8 @@ req_(urlApI_, (error_, response_, body_) => {
     const finisheDTasks_ = todos_.reduce((a_, todo_) => {
       if (todo_.completed) {
         a_[todo_.userId] = (a_[todo_.userId] || 0) + 1;
+      } else {
+        a_[todo_.userId] = a_[todo_.userId] || 0;
       }
       return a_;
     }, {});
