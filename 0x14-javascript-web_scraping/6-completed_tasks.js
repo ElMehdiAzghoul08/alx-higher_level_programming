@@ -19,7 +19,6 @@ req_(urlApI_, (error_, response_, body_) => {
       }
       return a_;
     }, {});
-    }
     console.log(finisheDTasks_);
   }
 });
